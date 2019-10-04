@@ -7,3 +7,15 @@ describe("<PlayerCard />", () => {
     render(<PlayerCard />);
   });
 });
+it("displays name", () => {
+  const display = render(<PlayerCard />);
+  display.getByText(/name/);
+});
+it("displays country", () => {
+  const display = render(<PlayerCard />);
+  display.getByText(/country/);
+});
+it("displays searches", () => {
+  const display = render(<PlayerCard />);
+  display.getByText(/searches/);
+});

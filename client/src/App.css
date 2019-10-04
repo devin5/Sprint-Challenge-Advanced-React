@@ -34,6 +34,7 @@
 .wrap {
   display: flex;
   flex-wrap: wrap;
+  box-shadow: 200px 0 100px rgba(172, 163, 170, 0.815);
 }
 .playercard {
   width: 23%;
@@ -42,6 +43,9 @@
   padding: 2%;
   margin: 2%;
   height: 20vh;
+  border-radius: 10px;
+
+  box-shadow: 0 0 30px rgba(55, 196, 231, 0.932);
 }
 .dark-mode__toggle {
   background: rgba(92, 92, 92, 0.253);
@@ -54,7 +58,7 @@
 }
 
 .toggle {
-  background: rgba(171, 196, 196, 0.8);
+  background: rgba(55, 196, 231, 0.719);
   border-radius: 50px;
   height: 40px;
   left: 0;
@@ -65,10 +69,15 @@
 
 .toggled {
   left: 38px;
-  background: rgba(221, 180, 231, 0.8);
+  background: rgba(231, 55, 193, 0.815);
 }
 
 .dark-mode .playercard {
   background-color: rgba(221, 180, 231, 0.473);
   border: 10px solid rgba(221, 180, 231, 0.873);
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(231, 55, 193, 0.815);
+}
+body {
+  background-color: rgb(231, 227, 220);
 }
